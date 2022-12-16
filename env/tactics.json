@@ -1,0 +1,45 @@
+{
+    "tactics_config": {
+        "all_tactics": [
+            "simplify",
+            "smt",
+            "bit-blast",
+            "bv1-blast",
+            "solve-eqs",
+            "aig",
+            "qfnra-nlsat",
+            "sat",
+            "max-bv-sharing",
+            "reduce-bv-size",
+            "purify-arith",
+            "propagate-values",
+            "elim-uncnstr",
+            "ackermannize_bv"
+        ],
+        "allowed_params": {
+            "simplify": {
+                "boolean": [
+                    "elim_and",
+                    "blast_distinct",
+                    "som",
+                    "pull_cheap_ite",
+                    "hoist_mul",
+                    "local_ctx",
+                    "flat"
+                ]
+            },
+            "propagate-values": {
+                "boolean": [
+                    "push_ite_bv"
+                ]
+            },
+            "aig": {
+                "boolean": [
+                    "aig_per_assertion"
+                ]
+            }
+        }
+    }
+}
+
+
